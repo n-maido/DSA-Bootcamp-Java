@@ -43,7 +43,7 @@ public class TypeCasting {
         // smaller gets converted to the larger type
         double result = (f1 * b1) + (i1 / c1) - (d1 * s1);
         System.out.println((f1 * b1) +  " " + (i1 / c1) + "" + (d1 * s1));
-        // float + int - double = double
+
         System.out.println(result);
 
     }
