@@ -30,8 +30,6 @@ public class FirstAndLast {
 
         while (start <= end) {
             // find middle elem
-            // int mid = (start + end) / 2;
-            // it's possible that start + end exceeds the range for int
             int mid = start + (end - start) / 2;
 
             if (target < nums[mid]) {
