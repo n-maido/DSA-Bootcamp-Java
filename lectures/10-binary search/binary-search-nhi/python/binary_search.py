@@ -23,10 +23,10 @@ def binary_search(arr, target):
             return mid
         elif target < arr[mid]:
             # check left side
-            end = mid - 1; 
+            end = mid - 1
         elif target > arr[mid]:
             # check right side
-            start = mid + 1;
+            start = mid + 1
     return -1
 
 # returns index of target, -1 elsewise
@@ -48,17 +48,17 @@ def agnostic_bs(arr, target):
         if isAsc:
             if target < arr[mid]:
                 # check left side
-                end = mid - 1; 
+                end = mid - 1
             elif target > arr[mid]:
                 # check right side
-                start = mid + 1;
+                start = mid + 1
         else:
             if target > arr[mid]:
                 # check left side
-                end = mid - 1; 
+                end = mid - 1
             elif target < arr[mid]:
                 # check right side
-                start = mid + 1;
+                start = mid + 1
     return -1
 
 

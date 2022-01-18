@@ -40,14 +40,12 @@ public class SplitArray {
                     sum += num;
                 }
             }
-            // condition #1
             if (pieces > m) {
                 start = mid + 1;
             } else {
                 end = mid;
             }
         }
-
         return end; // start = end
     }
 }
