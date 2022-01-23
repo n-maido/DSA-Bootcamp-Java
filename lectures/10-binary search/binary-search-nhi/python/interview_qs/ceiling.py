@@ -30,5 +30,5 @@ def ceiling(arr, target):
 
     return start
     
-    
-
+if __name__ == "__main__":
+    main()

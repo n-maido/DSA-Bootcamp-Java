@@ -30,3 +30,6 @@ def floor(arr, target):
             return mid
 
     return end
+
+if __name__ == "__main__":
+    main()

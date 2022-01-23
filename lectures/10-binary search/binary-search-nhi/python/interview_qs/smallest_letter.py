@@ -25,6 +25,6 @@ def nextGreatestLetter(letters, target):
             start = mid + 1
 
     return letters[start % len(letters)]
-    
-    
 
+if __name__ == "__main__":
+    main()
