@@ -11,20 +11,20 @@ def main():
 
 # returns index of target, -1 elsewise
 # takes an array sorted in ascending order
-def binary_search(arr, target):
+def binary_search(nums, target):
     start = 0
-    end = len(arr) - 1
+    end = len(nums) - 1
 
     while start <= end:
         # find middle index
         mid = round(start + (end - start) / 2)
 
-        if arr[mid] == target:
+        if nums[mid] == target:
             return mid
-        elif target < arr[mid]:
+        elif target < nums[mid]:
             # check left side
             end = mid - 1
-        elif target > arr[mid]:
+        elif target > nums[mid]:
             # check right side
             start = mid + 1
     return -1
