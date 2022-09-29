@@ -27,9 +27,9 @@ def floor(arr, target):
             start = mid + 1
         else:
             # target = mid
-            return mid
+            return arr[mid]
 
-    return end
+    return arr[end]
 
 if __name__ == "__main__":
     main()

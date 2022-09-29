@@ -24,24 +24,24 @@ public class Ceiling {
         if (target > arr[arr.length - 1]) {
             return -1;
         }
-        int start = 0;
-        int end = arr.length - 1;
+        int startIndex = 0;
+        int endIndex = arr.length - 1;
 
-        while (start <= end) {
+        while (startIndex <= endIndex) {
             // find middle elem
             // int mid = (start + end) / 2;
             // it's possible that start + end exceeds the range for int
-            int mid = start + (end - start) / 2;
+            int midIndex = startIndex + (endIndex - startIndex) / 2;
 
-            if (target < arr[mid]) {
-                end = mid - 1; // check the left side
-            } else if (target > arr[mid]) {
-                start = mid + 1; // check the right side
+            if (target < arr[midIndex]) {
+                endIndex = midIndex - 1; // check the left side
+            } else if (target > arr[midIndex]) {
+                startIndex = midIndex + 1; // check the right side
             } else {
                 // ans found
-                return mid;
+                return arr[midIndex];
             }
         }
-        return start;
+        return arr[startIndex];
     }
 }

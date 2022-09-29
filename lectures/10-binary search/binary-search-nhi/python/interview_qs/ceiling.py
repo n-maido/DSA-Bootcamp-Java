@@ -11,24 +11,25 @@ def ceiling(arr, target):
     if target > arr[len(arr) - 1]:
         return -1
 
-    start = 0
-    end = len(arr) - 1
+    startIndex = 0
+    endIndex = len(arr) - 1
 
-    while start <= end:
+    while startIndex <= endIndex:
         # find middle index
-        mid = round(start + (end - start) / 2)
+        midIndex = round(startIndex + (endIndex - startIndex) / 2)
+        print(f"middle: {midIndex}")
 
-        if target < arr[mid]:
+        if target < arr[midIndex]:
             # check left side
-            end = mid - 1
-        elif target > arr[mid]:
+            endIndex = midIndex - 1
+        elif target > arr[midIndex]:
             # check right side
-            start = mid + 1
+            startIndex = midIndex + 1
         else:
             # target = mid
-            return mid
+            return arr[midIndex]
 
-    return start
+    return arr[startIndex]
     
 if __name__ == "__main__":
     main()
